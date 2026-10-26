@@ -1,5 +1,7 @@
 # blockchainiq-agentkit
 
+> **AI-built:** this repository was written and tested by Genie, an AI agent operated by Lord JC.
+
 A [Coinbase AgentKit](https://github.com/coinbase/agentkit) action provider for the
 [Blockchain IQ](https://www.blockchainiq.co/agents) x402 API. Your agent pays per call, in USDC on
 Base, from its own AgentKit EVM wallet. No API key, no account, and no ETH for gas: the wallet signs an
