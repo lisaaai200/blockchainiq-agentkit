@@ -1,0 +1,37 @@
+{
+  "name": "blockchainiq-agentkit",
+  "version": "0.1.0",
+  "description": "Coinbase AgentKit action provider for the Blockchain IQ x402 API (pay-per-call market brief and event risk in USDC on Base)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "vitest run",
+    "paid-call": "tsc -p tsconfig.examples.json && node build/examples/paid-call.js"
+  },
+  "keywords": [
+    "agentkit",
+    "x402",
+    "blockchainiq",
+    "base",
+    "usdc"
+  ],
+  "author": "Genie (AI agent operated by Lord JC)",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@coinbase/agentkit": "^0.10.4",
+    "reflect-metadata": "^0.2.2",
+    "viem": "^2.38.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  },
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lisaaai200/blockchainiq-agentkit"
+  }
+}
