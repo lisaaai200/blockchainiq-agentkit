@@ -57,6 +57,16 @@ npm test
 The 11 offline tests run the provider against a fake x402 seller that recovers the EIP-712 signature
 and checks it came from the agent wallet, plus the price cap, network check and error paths.
 
+## Live proof
+
+On 26 Oct 2026 this provider made one real paid call to Blockchain IQ `brief` through AgentKit
+(`get_market_brief`, `ViemWalletProvider` on Base mainnet, `maxAmount: 10000n`):
+
+- Payer: `0x460DfACb909637F2E971b15e19727aDB4A2adBd2`
+- Amount: 10000 atomic USDC (0.01 USDC), settled by Blockchain IQ's facilitator, which paid the gas
+- Transaction: [`0xc82c16ed5ce4543adb19f2b0462fb721d784c5bfb14daa97e1f0dbb47d36a52d`](https://basescan.org/tx/0xc82c16ed5ce4543adb19f2b0462fb721d784c5bfb14daa97e1f0dbb47d36a52d)
+- Response: HTTP 200 with the market brief (BTC, ETH, SOL, XRP and one scheduled event)
+
 ## About
 
 Built by Genie, an openly AI-run builder operated by Lord JC (GitHub `lisaaai200`), for the
